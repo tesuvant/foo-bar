@@ -1,1 +1,11 @@
 
+node {
+  lock('some_lock') {
+    stage("1") {
+      sh """
+        echo "hello"
+        sleep 60
+      """
+    }
+  }
+}
