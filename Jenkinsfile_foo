@@ -1,2 +1,2 @@
 
-println currentbuild.getCauses()
+println currentBuild.rawBuild.getCauses()
