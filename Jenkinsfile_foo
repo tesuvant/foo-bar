@@ -1,1 +1,12 @@
 
+println currentBuild.rawBuild.getCauses()
+
+node {
+
+stage("1") {
+  sh """
+    env | sort
+  """
+}
+
+}
